@@ -1,73 +1,138 @@
-# React + TypeScript + Vite
+# Proyecto Narannjja
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> An accessibility suite desktop application built with Electron, React, and TypeScript.
 
-Currently, two official plugins are available:
+![GitHub stars](https://img.shields.io/github/stars/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![License](https://img.shields.io/badge/license-GPL-30-or-later-green?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📑 Table of Contents
 
-## React Compiler
+- [Description](#description)
+- [Key Features](#key-features)
+- [Use Cases](#use-cases)
+- [Tech Stack](#tech-stack)
+- [Quick Start](#quick-start)
+- [Key Dependencies](#key-dependencies)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Development Setup](#development-setup)
+- [Contributing](#contributing)
+- [License](#license)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📝 Description
 
-## Expanding the ESLint configuration
+Proyecto Narannjja is an accessibility suite designed to run as a desktop application. It provides users with targeted accessibility tools packaged in a local desktop environment to improve general computer usability.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Key Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **🖥️ Electron Desktop Integration** — Utilizes Electron with a dedicated main.cjs process to run the application natively on desktop environments.
+- **⚡ Vite-Powered React Frontend** — Built using React, TypeScript, and Vite for fast development compilation and efficient rendering.
+- **📦 Bundled Build Scripts** — Includes pre-configured npm scripts for local development, linting, previewing, and building both the web app and Electron executable.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🎯 Use Cases
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Developing and running a desktop accessibility suite locally using Electron and React.
+- Building and packaging standalone desktop binaries for multi-platform deployment.
+
+## 🛠️ Tech Stack
+
+- 🔌 **Electron**
+- ⚛️ **React**
+- 📘 **TypeScript**
+- ⚡ **Vite**
+
+## ⚡ Quick Start
+
+```bash
+
+# 1. Clone the repository
+git clone https://github.com/devr3x/proyecto-narannjja.git
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Key Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+electron-updater: ^6.8.3
+lucide-react: ^1.16.0
+react: ^19.2.6
+react-dom: ^19.2.6
+react-router-dom: ^7.15.1
+```
+
+## 🚀 Available Scripts
+
+- **dev** — `npm run dev`
+- **build** — `npm run build`
+- **lint** — `npm run lint`
+- **preview** — `npm run preview`
+- **electron:start** — `npm run electron:start`
+- **electron:build** — `npm run electron:build`
+
+## 📁 Project Structure
+
+```
+.
+├── LICENSE
+├── build-log.txt
+├── eslint.config.js
+├── index.html
+├── main.cjs
+├── package.json
+├── public
+│   ├── favicon.svg
+│   ├── icons.svg
+│   └── logo.png
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── index.css
+│   ├── main.tsx
+│   ├── modules
+│   │   ├── NaranjaScan.tsx
+│   │   ├── NaranjaSpace.tsx
+│   │   ├── NaranjaTalk.tsx
+│   │   ├── NaranjaType.tsx
+│   │   └── NaranjaVoice.tsx
+│   └── utils
+│       └── speechService.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+```
+
+## 🛠️ Development Setup
+
+### Node.js / JavaScript
+1. Install Node.js (v18+ recommended)
+2. Install dependencies: `npm install` (or `yarn` / `pnpm install` / `bun install`)
+3. Start the dev server: see the **Quick Start** above
+
+## 👥 Contributing
+
+Contributions are welcome! Here's the standard flow:
+
+1. **Fork** the repository
+2. **Clone** your fork: `git clone https://github.com/devr3x/proyecto-narannjja.git`
+3. **Branch**: `git checkout -b feature/your-feature`
+4. **Commit**: `git commit -m 'feat: add some feature'`
+5. **Push**: `git push origin feature/your-feature`
+6. **Open** a pull request
+
+Please follow the existing code style and include tests for new behavior where applicable.
+
+## 📜 License
+
+This project is licensed under the **GPL-3.0-or-later** License.
+
+---
+*This README was generated with ❤️ by [ReadmeBuddy](https://readmebuddy.com)*
