@@ -2,7 +2,7 @@
 
 > An accessibility suite desktop application built with Electron, React, and TypeScript.
 
-![GitHub stars](https://img.shields.io/github/stars/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![License](https://img.shields.io/badge/license-GPL-30-or-later-green?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/devr3x/proyecto-narannjja?style=for-the-badge&logo=github) ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
 ## 📑 Table of Contents
 
@@ -133,6 +133,3 @@ Please follow the existing code style and include tests for new behavior where a
 ## 📜 License
 
 This project is licensed under the **GPL-3.0-or-later** License.
-
----
-*This README was generated with ❤️ by [ReadmeBuddy](https://readmebuddy.com)*
